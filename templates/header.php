@@ -18,15 +18,15 @@ include_once("helpers/url.php");
 </head>
 <body>
   <header>
-    <a href=" <?php $BASE_URL ?> " id="LOGO">
+    <a href="<?php $BASE_URL ?>index.php" id="logo">
   <img src="<?php $BASE_URL ?>img/logo.svg" alt=""></a>
 
   <nav>
     <ul id="navbar">
-      <li> <a href="<? $BASE_URL ?>index.php">Home</a></li>
-      <li> <a href="#">Categorias</a></li>
-      <li> <a href="<? $BASE_URL ?>">Sobre</a></li>
-      <li> <a href="<? $BASE_URL ?>contato.php">Contato</a></li>
+      <li> <a href="<? $BASE_URL ?>index.php" class="nav-link">Home</a></li>
+      <li> <a href="#" class="nav-link">Categorias</a></li>
+      <li> <a href="<? $BASE_URL ?>" class="nav-link">Sobre</a></li>
+      <li> <a href="<? $BASE_URL ?>contato.php" class="nav-link">Contato</a></li>
     </ul>
   </nav>
   </header>
