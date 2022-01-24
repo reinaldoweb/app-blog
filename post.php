@@ -29,27 +29,29 @@ if(isset($_GET['id'])){
     Explicabo aliquid beatae asperiores porro impedit adipisci natus sapiente rerum molestiae? Exercitationem saepe sequi laborum libero sunt, alias laboriosam facere autem veniam qui odit esse cupiditate velit excepturi fuga officiis.
     Debitis aperiam dolorum fugit natus. Veritatis ad deserunt nemo ex quia minima expedita! Eaque, nesciunt neque necessitatibus eveniet molestias pariatur incidunt sint aliquid! Sit et deleniti unde animi ad voluptatem.</p>
   </div>
-</main>
+  
+  <aside id="nav-container">
+    <h3 id="tags-title">Tags</h3>
+    <ul id="tag-list">
+      <?php foreach($currentPost['tags'] as $tags): ?>
+        <li>
+          <a href="#"><?= $tags?></a>
+        </li>
+        <?php endforeach; ?>
+        
+        <h3 id="categories-title">Categorias</h3>
 
-<aside id="nav-container">
-  <h3 id="tags-title">Tags</h3>
-  <ul id="tag-list">
-    <?php foreach($currentPost['tags'] as $tags): ?>
-      <li>
-        <a href="#"><?= $tags?></a>
-      </li>
-    <?php endforeach; ?>
-    <h3 id="categories-title">Categorias</h3>
-    <ul id="categories-list">
-    <?php foreach($categories as $category): ?>
-      <li>
-        <a href="#"><?= $category?></a>
-      </li>
-    <?php endforeach; ?>
-    </ul>
-    
-  </ul>
-</aside>
+        <ul id="categories-list">
+          <?php foreach($categories as $category): ?>
+            <li>
+              <a href="#"><?= $category?></a>
+            </li>
+            <?php endforeach; ?>
+          </ul>
+          
+        </ul>
+      </aside>
+    </main>
 
 
 
